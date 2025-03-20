@@ -44,7 +44,6 @@ public class Inventory : MonoBehaviour
             HideInventory();
         changeEquippedOnHUD(inventory[whereIsMain]);// code to make add the main item to the hotbar
         useHealthItem();
-        takeDamage();
         death();
 
     }
@@ -159,11 +158,6 @@ public class Inventory : MonoBehaviour
         }    
     }
 
-    public void takeDamage()
-    {
-        if(Input.GetKeyDown(KeyCode.P))
-        {playerStats.health-=10;}
-    }
 
     public void death()
     {
